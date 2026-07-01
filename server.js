@@ -26,7 +26,7 @@ app.post("/", async (req, res) => {
       return res.sendStatus(200);
     }
 
-    await db.ref("ROUTE-1").update({
+    await db.ref("ROUTE-3B").update({
       latitude: location.latitude,
       longitude: location.longitude,
       lastUpdated: new Date().toLocaleTimeString("en-MY", {
